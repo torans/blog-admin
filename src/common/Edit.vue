@@ -1,7 +1,7 @@
 
 <template>
   <div class="edit">
-    <mavonEditor v-model="value" class="mavonEditor"/>
+    <mavonEditor v-model="content" class="mavonEditor"/>
   </div>
 </template>
 <script>
@@ -9,7 +9,9 @@
   import 'mavon-editor/dist/css/index.css'
   export default {
     data () {
-      return {}
+      return {
+        content: ''
+      }
     },
     components: {
       mavonEditor

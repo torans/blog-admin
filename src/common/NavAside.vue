@@ -21,17 +21,13 @@
     display: block;
     margin: 0 auto;
   }
-  .article-logo {
-    height: 100px;
-    margin-top: 50px;
-  }
   .article-logo>img, .label-logo>img, .use-logo>img {
     display: block;
     margin: 0 auto;
     cursor: pointer;
   }
-  .label-logo, .use-logo {
-    height: 100px;
+  .article-logo, .label-logo, .use-logo {
+    height: 50px;
     margin-top: 20px;
   }
 

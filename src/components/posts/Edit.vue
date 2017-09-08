@@ -9,18 +9,13 @@
         <Icon type="plus-round"></Icon>
       </div>
       <ul style="max-height: 782px;">
-        <li>
-          <h3 class="articlePreview-title-publish">
-            请输入文章标题
-          </h3>
-          <p>2017-07-28 08:27:29</p>
-        </li>
+        <Articles></Articles>
       </ul>
     </div>
     <div class="router-view">
       <div class="articel-edit-wrap">
         <div class="article-title">
-          <input type="text" placeholder="标题">
+          <input type="text" placeholder="文章标题">
         </div>
         <div class="article-toolbar">
           <div class="label">
@@ -50,13 +45,15 @@
 <script>
   import NavAside from '../../common/NavAside.vue'
   import Edit from '../../common/Edit.vue'
+  import Articles from '../../common/Articlelists.vue'
   export default {
     data () {
       return {}
     },
     components: {
       NavAside,
-      Edit
+      Edit,
+      Articles
     }
   }
 </script>
@@ -70,6 +67,9 @@
     border-right: 1px solid #f1f1f1;
     z-index: 1;
     background-color: #fff;
+  }
+  .article-editor{
+    padding-right: 1vw;
   }
   .article-instructions {
     height: 65px;
